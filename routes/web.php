@@ -22,5 +22,6 @@ Route::group(['prefix'=>'{language}'],function()
     {
         return view('home');
     });
+    
 
 });

@@ -1,5 +1,6 @@
 {
-    "logo": "url",
+    "logo": "/img/logo-ar.png",
+    "nav_lang" : "English",
     "filter": "التصنيف",
     "today": "اليوم",
     "this_week": "هذا الأسبوع",

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+:root {
+    --mainBlue: #3DA8C0;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0px;
+}
+
+:lang(en) body {
+    direction: ltr;
+    font-family: 'roboto', sans-serif;
+}
+
+:lang(ar) body {
+    direction: rtl;
+    font-family: 'roboto', sans-serif;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    background-color: var(--mainBlue);
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+}

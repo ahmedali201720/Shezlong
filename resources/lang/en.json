@@ -1,5 +1,6 @@
 {
-    "logo": "url",
+    "logo": "/img/logo-en.png",
+    "nav_lang" : "العربية",
     "filter": "Filters",
     "today": "Today",
     "this_week": "This Week",
