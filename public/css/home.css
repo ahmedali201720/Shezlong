@@ -38,6 +38,31 @@
     bottom: 100px;
 }
 
+.chat {
+    position: fixed;
+    right: 100px;
+    bottom: 160px;
+    width: 20vw;
+    height: 65vh;
+    border-radius: 15px;
+    background: linear-gradient(180deg, var(--mainBlue) 50%, var(--white) 50%);
+    z-index: 10;
+    display: none;
+    animation-name: FloatIn;
+    animation-duration: 1s;
+}
+
+@keyframes FloatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .footer {
     background-color: var(--mainBlue);
 }

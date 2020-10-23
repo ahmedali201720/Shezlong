@@ -2,7 +2,10 @@
 $('.img_msg').click(function () {
     if ($(this).attr('src') === "/img/message.svg") {
         $(this).attr('src', '/img/down-arrow.svg');
-    } else {
+        $(".chat").show();
+    }
+    else {
         $(this).attr('src', '/img/message.svg');
+        $(".chat").hide();
     }
 });
