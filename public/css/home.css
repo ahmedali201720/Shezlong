@@ -74,6 +74,10 @@ hr.banner-line {
     width: 100px;
 }
 
+select {
+    font-size: 14px !important;
+}
+
 .message {
     position: fixed;
     right: 100px;
