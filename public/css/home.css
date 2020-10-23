@@ -58,6 +58,11 @@ body {
     background-color: var(--mainBlue);
 }
 
+.banner-container {
+    animation-name: FlyIn;
+    animation-duration: 1.5s;
+}
+
 .banner-heading {
     color: var(--white);
     font-size: 24px;
