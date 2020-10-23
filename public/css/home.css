@@ -54,6 +54,15 @@ body {
     }
 }
 
+.banner {
+    background-color: var(--mainBlue);
+}
+
+.banner-heading {
+    color: var(--white);
+    font-size: 24px;
+}
+
 .message {
     position: fixed;
     right: 100px;

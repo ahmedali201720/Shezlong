@@ -5,8 +5,8 @@
             @include('navbar')
         </header>
 
-        <section class="banner">
-            
+        <section class="banner p-5">
+            @include('banner')
         </section>
 
         <div class="message">
