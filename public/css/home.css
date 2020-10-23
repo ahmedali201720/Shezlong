@@ -2,6 +2,7 @@
 :root {
     --mainBlue: #3DA8C0;
     --white: #ffffff;
+    --black: #000000;
 }
 
 * {
@@ -29,4 +30,27 @@
 
 .nav-link:hover {
     color: var(--white) !important;
+}
+
+.footer {
+    background-color: var(--mainBlue);
+}
+
+.footer-section-heading {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-section-item, .footer-item {
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-section-item:hover {
+    color: var(--black) !important;
+    text-decoration: none;
 }
