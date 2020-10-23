@@ -22,7 +22,7 @@
                 <p style="color: black;font-size:14px;font-weight:bold;">Start new conversation</p>
                 <img class="mr-1" src="/img/me.png" alt="customer" style="width: 35px;height:35px;float:left;"> 
                 <p style="font-size:12px;color:gray">Our usual reply time<br><i class="fa fa-clock-o mr-1" style="color: #3DA8C0"></i><strong>A few minutes</strong></p>
-                <a href="mailTo:ahmedalimohamed1994@gmail.com" style="text-decoration:none;"><button type="button" class="btn"><i class="fa fa-send" style="font-size: 14px"></i> send us message</button></a>
+                <a href="mailTo:ahmedalimohamed1994@gmail.com" style="text-decoration:none;"><button type="button" class="btn chat-btn"><i class="fa fa-send" style="font-size: 14px"></i> send us message</button></a>
             </div>
         </div>
 

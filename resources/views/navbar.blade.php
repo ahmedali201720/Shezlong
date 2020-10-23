@@ -29,7 +29,11 @@
                 <a href="#" class="nav-link">{{__('for_therapist')}}</a>
             </li>
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('nav_lang')}} <span><i class="material-icons" style='font-size:14px'>language</i><span></a>
+                @if (app()->getLocale()=="en")
+                    <a href="/ar" class="nav-link btn-lang">{{__('nav_lang')}} <span><i class="material-icons" style='font-size:14px'>language</i><span></a>
+                @else    
+                    <a href="/en" class="nav-link btn-lang">{{__('nav_lang')}} <span><i class="material-icons" style='font-size:14px'>language</i><span></a>
+                @endif
             </li>
         </ul>
     </div>

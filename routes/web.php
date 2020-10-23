@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LocalizationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,15 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route :: redirect('/','/en');
-
-Route::group(['prefix'=>'{language}'],function()
-{
-
-    Route::get('/', function () 
-    {
-        return view('home');
-    });
-    
-
+Route::get('/', function () {
+    return view('home');
 });
+
+Route::get('/{locale}' , 'App\Http\Controllers\LocalizationController@index');

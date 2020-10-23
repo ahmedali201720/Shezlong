@@ -1,6 +1,6 @@
 {
     "logo": "/img/logo-en.png",
-    "nav_lang" : "العربية",
+    "nav_lang": "العربية",
     "filter": "Filters",
     "today": "Today",
     "this_week": "This Week",
@@ -48,7 +48,7 @@
     "career": "Careers",
     "learn_more": "Learn More",
     "emergency": "Emergency Numbers",
-    "for_therapist": "For Therapists",
+    "for_therapist": "Therapists",
     "join_us": "Join Us",
     "rights": "All rights reserved to shezlong 2020",
     "fees_LH": "Fees(Low to High)",

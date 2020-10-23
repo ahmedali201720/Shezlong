@@ -3,35 +3,35 @@
     <div class="row">
         <div class="col-lg-3 col-md-4 px-5 my-5">
             <p class="footer-section-heading mb-4">
-                Shezlong Blog
+                {{__('shezlong_blog')}}
             </p>
             <a class="footer-section-item" href="#">
-                Terms and Conditions 
+                {{__('terms')}} 
             </a>
             <a class="footer-section-item" href="#">
-                Privacy and Policy
+                {{__('privacy')}}
             </a>
             <a class="footer-section-item" href="#">
-                Careers
+                {{__('career')}}
             </a>
         </div>
         <div class="col-lg-3 col-md-4 px-5 my-5">
             <p class="footer-section-heading mb-4">
-                Learn More
+                {{__('learn_more')}}
             </p>
             <a class="footer-section-item" href="#">
-                Blog 
+                {{__('blog')}}
             </a>
             <a class="footer-section-item" href="#">
-                Emergenecy Numbers
+                {{__('emergency')}}
             </a>
         </div>
         <div class="col-lg-2 col-md-4 px-5 my-5">
             <p class="footer-section-heading mb-4">
-                Therapists
+                {{__('for_therapist')}}
             </p>
             <a class="footer-section-item" href="#">
-                Join Us
+                {{__('join_us')}}
             </a>
         </div>
         <div class="col-lg-4 col-md-4 px-5 my-5">
@@ -40,10 +40,10 @@
                <a class="mx-2" href="#"><img src="/img/instagram.svg" alt="instagram" style="width:30px;height:30px;"></a>
             </div>
             <p class="footer-item">
-                All Rights Reserved to Shezlong 2020
+                {{__('rights')}}
             </p>
             <div class="mb-2" style="text-align: center;">
-               <a href="#"><img src="/img/logo-en.png" alt="logo" style="width:150px;height:57px;"></a>
+               <a href="#"><img src={{__('logo')}} alt="logo" style="width:150px;height:57px;"></a>
             </div>
             <div style="text-align: center;">
                <a class="mx-2" href="#"><img src="/img/ismho.png" alt="ISMHO" style="width:55px;height:40px;"></a>
