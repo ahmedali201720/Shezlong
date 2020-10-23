@@ -3,10 +3,16 @@
     --mainBlue: #3DA8C0;
     --white: #ffffff;
     --black: #000000;
+    --backColor: #F4F6F9;
 }
 
 * {
     margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--backColor);
 }
 
 :lang(en) body {
@@ -32,24 +38,120 @@
     color: var(--white) !important;
 }
 
+.navbar {
+    background-color: var(--white) !important;
+    animation: FlyIn 1s;
+}
+
+@keyframes FlyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .message {
     position: fixed;
     right: 100px;
     bottom: 100px;
+    z-index: 50;
 }
 
-.chat {
-    position: fixed;
-    right: 100px;
-    bottom: 160px;
-    width: 20vw;
-    height: 65vh;
-    border-radius: 15px;
-    background: linear-gradient(180deg, var(--mainBlue) 50%, var(--white) 50%);
-    z-index: 10;
-    display: none;
-    animation-name: FloatIn;
-    animation-duration: 1s;
+@media only screen and (min-width:768px) {
+    .chat {
+        padding: 20px;
+        position: fixed;
+        right: 100px;
+        bottom: 160px;
+        width: 30vw;
+        height: 65vh;
+        border-radius: 15px;
+        background: linear-gradient(180deg, var(--mainBlue) 50%, var(--white) 50%);
+        background-attachment: fixed;
+        z-index: 10;
+        display: none;
+        color: white;
+        animation-name: FloatIn;
+        animation-duration: 1s;
+    }
+    .chat-body {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--white) !important;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 3px 3px turquoise;
+        padding: 25px;
+    }
+    .chat-subtitle {
+        opacity: 0.65;
+        font-size: 14px;
+    }
+    .btn {
+        background-color: #ffffff;
+        border: 2px solid var(--mainBlue);
+        border-radius: 50px;
+        color: var(--mainBlue);
+        padding: 12px 16px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .chat {
+        padding: 20px;
+        position: fixed;
+        right: 100px;
+        bottom: 160px;
+        width: 60vw;
+        height: 70vh;
+        border-radius: 15px;
+        background: linear-gradient(180deg, var(--mainBlue) 50%, var(--white) 50%);
+        background-attachment: fixed;
+        z-index: 10;
+        display: none;
+        color: white;
+        animation-name: FloatIn;
+        animation-duration: 1s;
+    }
+    .chat-body {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--white) !important;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 3px 3px turquoise;
+        padding: 25px;
+    }
+    .chat-subtitle {
+        opacity: 0.65;
+        font-size: 14px;
+    }
+    .btn {
+        background-color: #ffffff;
+        border: 2px solid var(--mainBlue);
+        border-radius: 50px;
+        color: var(--mainBlue);
+        padding: 12px 16px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.btn:hover {
+    background-color: var(--mainBlue);
+    color: var(--white);
 }
 
 @keyframes FloatIn {
