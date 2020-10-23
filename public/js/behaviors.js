@@ -9,3 +9,9 @@ $('.img_msg').click(function () {
         $(".chat").hide();
     }
 });
+
+// animate on scroll
+
+window.addEventListener('scroll', function (e) {
+    $(".navbar").fadeIn().css({ top: -50 }).animate({ top: 0 }, 2000);
+});

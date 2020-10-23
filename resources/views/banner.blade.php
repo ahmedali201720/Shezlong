@@ -4,7 +4,7 @@
         <p>{{__('better_life')}}</p>
         </div>
         <div class="banner-heading col-10 mx-auto text-center">
-        <button type="button" class="banner-btn btn btn-outline-primary">{{__('choose_th')}}</button>
+        <button type="button" class="banner-btn btn btn-outline-primary" style="background-color: white;color:#3DA8C0">{{__('choose_th')}}</button>
             <hr class="horizontal">
         <button type="button" class="banner-btn btn btn-outline-secondary">{{__('date_time')}}</button>
             <hr class="horizontal">

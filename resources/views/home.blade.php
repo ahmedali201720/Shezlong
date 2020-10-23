@@ -9,6 +9,10 @@
             @include('banner')
         </section>
 
+        <section class="filters p-3">
+            @include('filters')
+        </section>
+
         <div class="message">
             <img class="img_msg" src="/img/message.svg" alt="message" style="width:50px;height:50px;">
         </div>
