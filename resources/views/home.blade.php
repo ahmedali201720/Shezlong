@@ -5,7 +5,9 @@
             @include('navbar')
         </header>
 
-        
+        <div class="message">
+            <img class="img_msg" src="/img/message.svg" alt="message" style="width:50px;height:50px;">
+        </div>
 
         <footer class="footer py-5" id="footer">
             @include('footer')
