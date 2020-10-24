@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row flex-row-reverse mx-auto">
-        <div class="input-group col-3">
+        <div class="input-group col-lg-3 col-md-6 d-none d-lg-flex d-md-flex">
            <div class="input-group-prepend">
               <span class="input-group-text"><i class="fa fa-filter"></i></span>
            </div>
@@ -10,7 +10,7 @@
               <option value="rate">{{__('top_rated')}}</option>
            </select>
         </div>
-        <div class="input-group col-3">
+        <div class="input-group col-lg-3 col-md-6 d-none d-lg-flex d-md-flex">
            <select class="custom-select" id="inlineFormCustomSelect">
               <option selected value="all">{{__('all_spec')}}</option>
               <option value="Child disorders">{{__('child_disorder')}}</option>
@@ -24,7 +24,7 @@
               <option value="Old age disorders">{{__('old_age')}}</option>
            </select>
         </div>
-        <div class="input-group col-3">
+        <div class="input-group col-lg-3 col-md-6 d-none d-lg-flex d-md-flex">
            <div class="input-group-prepend">
               <span class="input-group-text"><i class="fa fa-search"></i></span>
            </div>

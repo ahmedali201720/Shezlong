@@ -66,5 +66,6 @@
     "from_150_to_200": "From 150 to 200",
     "from_200_to_300": "From 200 to 300",
     "from_300_to_500": "From 300 to 500",
-    "above_500": "Above 500"
+    "above_500": "Above 500",
+    "rev": "rev"
 }

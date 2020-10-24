@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/{locale}' , 'App\Http\Controllers\LocalizationController@index');
+Route::get('/{locale}' , 'App\Http\Controllers\DoctorsController@index');
