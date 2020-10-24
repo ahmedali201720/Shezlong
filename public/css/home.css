@@ -117,6 +117,8 @@ select {
 
 .card-body {
     color: #3DA8C0;
+    font-size: 15px !important;
+    font-weight: bold;
 }
 
 .card-body p {
@@ -141,7 +143,7 @@ select {
 
 .banner-card {
     background-color: var(--mainBlue);
-    min-height: 461;
+    min-height: 447;
 }
 
 .banner-button {
@@ -159,6 +161,14 @@ select {
 
 .banner-button:hover {
     color: #F4794C;
+    background-color: var(--white);
+}
+
+.fa-search:hover {
+    color: var(--mainBlue);
+}
+
+.input-group-text:hover {
     background-color: var(--white);
 }
 

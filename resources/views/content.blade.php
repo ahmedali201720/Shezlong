@@ -25,13 +25,13 @@
         @foreach ($doctors as $doctor) 
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card main-card text-center my-3">
-            <img src="/img/me.png" alt="" class="img-fluid rounded-circle mx-auto mt-3" style="width: 130px" ;>
+            <img src="{{$doctor['img_url']}}" alt="" class="img-fluid rounded-circle mx-auto mt-3" style="width: 130px" ;>
             <div class="card-body">
                 @if(app()->getLocale()==="en")
-                  <h6>{{$doctor['name_en']}}</h6>
+                  <p>{{$doctor['name_en']}}</p>
                   <small style="color: gray;">{{$doctor['title_en']}}</small>
                 @else
-                  <h5>{{$doctor['name_ar']}}</h5>
+                  <p>{{$doctor['name_ar']}}</p>
                   <small style="color: gray;">{{$doctor['title_ar']}}</small>
                 @endif
                 <hr>
@@ -60,8 +60,8 @@
                 @else
                    <span class="fa fa-star unchecked"></span>
                 @endif
-                <span style="color: rgb(224, 110, 17);">({{$doctor['rate']}}) </span>
-                <span style="color: gray;"> ({{$doctor['reviews']}} <small>{{__('rev')}}</small>)</span>
+                <span style="color: rgb(224, 110, 17);"><small>({{$doctor['rate']}}) </small></span>
+                <span style="color: gray;"> <small>{{$doctor['reviews']}} {{__('rev')}}</small></span>
                 <hr>
                 @if(app()->getLocale()==="en")
                    <small style="color: gray;">{{$doctor['spec_en']}}</small>
@@ -69,8 +69,8 @@
                    <small style="color: gray;">{{$doctor['spec_ar']}}</small>
                 @endif
                 <div class="d-flex justify-content-around align-items-center mt-4">
-                    <p><i class="fa fa-money"></i> {{__('egp')}} {{$doctor['fees']}}</p>
-                    <p><i class="fa fa-play"></i> {{$doctor['sessions']}}+ {{__('session')}}</p>
+                    <small><i class="fa fa-money"></i> {{__('egp')}} {{$doctor['fees']}}</small>
+                    <small><i class="fa fa-play"></i> {{$doctor['sessions']}}+ {{__('session')}}</small>
                 </div>
             </div>
             <div class="container">

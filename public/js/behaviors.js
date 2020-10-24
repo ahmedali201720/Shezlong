@@ -1,3 +1,4 @@
+
 // Set toggle functionality between chat visibility
 $('.img_msg').click(function () {
     if ($(this).attr('src') === "/img/message.svg") {
@@ -103,4 +104,24 @@ function handleUncheckingStarGroup(id) {
         rate = 5;
         $('#result').html(rate.toString() + "/5");
     }
+}
+
+function handleSort() {
+    var lang = $('html').attr('lang');
+    var selected = $('.sort-select').val();
+    window.location.href = "/" + lang + "/" + "sort/" + selected;
+}
+
+function handleFilter() {
+    var lang = $('html').attr('lang');
+    var filter = $('.filter-select').val();
+    window.location.href = "/" + lang + "/" + "spec/" + filter;
+}
+
+function handleSearch() {
+    var lang = $('html').attr('lang');
+    var search = $('.search-form').val();
+    console.log(search);
+    if (search)
+        window.location.href = "/" + lang + "/" + "search/" + search;
 }
