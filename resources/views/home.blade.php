@@ -13,12 +13,7 @@
             @include('filters')
         </section>
 
-        <section class="sidebar">
-            <div class="d-flex justify-content-around">
-                @include('sidebar')
-                @include('content')
-            </div>
-        </section>
+        @include('content')
 
         <div class="message">
             <img class="img_msg" src="/img/message.svg" alt="message" style="width:50px;height:50px;">
