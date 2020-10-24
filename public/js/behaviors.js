@@ -13,11 +13,13 @@ $('.img_msg').click(function () {
 
 var rate = 3;
 
-// animate on scroll
+// animate navbar on scroll
 
 window.addEventListener('scroll', function (e) {
     $(".navbar").fadeIn().css({ top: -50 }).animate({ top: 0 }, 2000);
 });
+
+// Handling rating stars functionality
 
 $(".star").on('click', function () {
     var id = +($(this).attr('id'));
@@ -68,6 +70,9 @@ function handleCheckingStarGroup(id) {
         $('#result').html(rate.toString() + "/5");
     }
 }
+
+// handling in case of unchecking
+
 function handleUncheckingStarGroup(id) {
     if (id === 1) {
         $('#1').attr('class', 'fa fa-star checked star');
@@ -106,17 +111,23 @@ function handleUncheckingStarGroup(id) {
     }
 }
 
+// Configuring sorting routes
+
 function handleSort() {
     var lang = $('html').attr('lang');
     var selected = $('.sort-select').val();
     window.location.href = "/" + lang + "/" + "sort/" + selected;
 }
 
+// Configuring filter routes
+
 function handleFilter() {
     var lang = $('html').attr('lang');
     var filter = $('.filter-select').val();
     window.location.href = "/" + lang + "/" + "spec/" + filter;
 }
+
+// Configuring search route
 
 function handleSearch() {
     var lang = $('html').attr('lang');

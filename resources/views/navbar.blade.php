@@ -12,21 +12,21 @@
                 <a href="#" class="nav-link">{{__('therapist_list')}}</a>
             </li>
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('how_it_works')}}</a>
+                <a href="https://www.shezlong.com/en/" class="nav-link">{{__('how_it_works')}}</a>
             </li>
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('test')}}</a>
+                <a href="https://www.shezlong.com/en/psychometer" class="nav-link">{{__('test')}}</a>
             </li>
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('blog')}}</a></a>
+                <a href="https://blog.shezlong.com/" class="nav-link">{{__('blog')}}</a></a>
             </li>
         </ul>
         <ul class="navbar-nav mr-5">
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('sign_in')}}</a>
+                <a href="https://www.shezlong.com/en/signin?target=%2Ftherapist%2Fsearch" class="nav-link">{{__('sign_in')}}</a>
             </li>
             <li class="nav-item active px-1">
-                <a href="#" class="nav-link">{{__('for_therapist')}}</a>
+                <a href="https://www.shezlong.com/en/joinus" class="nav-link">{{__('for_therapist')}}</a>
             </li>
             <li class="nav-item active px-1">
                 @if (app()->getLocale()=="en")

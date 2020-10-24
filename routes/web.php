@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/ar');
 
-Route::get('/{locale}' , 'App\Http\Controllers\DoctorsController@index');
-Route::get('/{locale}/sort/{sorter}' , 'App\Http\Controllers\DoctorsController@sort');
-Route::get('/{locale}/spec/{filter}' , 'App\Http\Controllers\DoctorsController@filter');
-Route::get('/{locale}/search/{search}' , 'App\Http\Controllers\DoctorsController@search');
+Route::group(['prefix'=>'/{locale}'], function(){
+   Route::get('/' , 'App\Http\Controllers\DoctorsController@index');
+   Route::get('/sort/{sorter}' , 'App\Http\Controllers\DoctorsController@sort');
+   Route::get('/spec/{filter}' , 'App\Http\Controllers\DoctorsController@filter');
+   Route::get('/search/{search}' , 'App\Http\Controllers\DoctorsController@search'); 
+});
