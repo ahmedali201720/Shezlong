@@ -4,6 +4,7 @@
     --white: #ffffff;
     --black: #000000;
     --backColor: #F4F6F9;
+    --greyColor: gainsboro;
 }
 
 * {
@@ -112,6 +113,53 @@ select {
 .badge:hover {
     background-color: silver;
     cursor: pointer;
+}
+
+.card-body {
+    color: #3DA8C0;
+}
+
+.card-body p {
+    color: #3DA8C0;
+    font-size: 14px;
+}
+
+.card-body a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.card-btn:hover {
+    background-color: turquoise !important;
+    cursor: pointer;
+}
+
+.card-footer {
+    font-size: 16px;
+}
+
+.banner-card {
+    background-color: var(--mainBlue);
+    min-height: 461;
+}
+
+.banner-button {
+    background-color: #F4794C;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    color: #F4794C;
+    background-color: var(--white);
 }
 
 .message {

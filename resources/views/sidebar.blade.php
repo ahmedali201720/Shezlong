@@ -1,6 +1,3 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 mb-5 py-5">
             <div class="sidebar-head d-flex justify-content-between align-items-center px-3 py-2">
             <div style="color: white;">{{__('filter')}}</div>
             <div><button class="sidebar-clear-btn">{{__('clear')}}</button></div>
@@ -95,6 +92,4 @@
                    {{__('above_500')}}
                 </p>
             </div>
-        </div>
-    </div>
-</div>
+        </div>  

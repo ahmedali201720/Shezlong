@@ -14,7 +14,10 @@
         </section>
 
         <section class="sidebar">
-            @include('sidebar')
+            <div class="d-flex justify-content-around">
+                @include('sidebar')
+                @include('content')
+            </div>
         </section>
 
         <div class="message">
