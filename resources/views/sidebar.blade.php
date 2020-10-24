@@ -10,12 +10,12 @@
             </div>
             <div class="d-flex justify-content-around align-items-center px-3 py-2" style="background-color:white;">
                 <div class="form-check">
-                   <input type="checkbox" class="form-check-input" id="check1">
-                   <label class="form-check-label" for="check1">{{__('today')}}</label>
+                   <input type="checkbox" name="today" class="form-check-input" id="check1" value="today">
+                   <label class="form-check-label mr-3" for="today">{{__('today')}}</label>
                 </div>
                 <div class="form-check">
-                   <input type="checkbox" class="form-check-input" id="check2">
-                   <label class="form-check-label" for="check2">{{__('this_week')}}</label>
+                   <input type="checkbox" class="form-check-input" name="this_week" id="check2" value="this_week">
+                   <label class="form-check-label mr-3" for="this_week">{{__('this_week')}}</label>
                 </div>
             </div>
             <div class="d-flex px-3 py-2" style="background-color:white;">
@@ -23,7 +23,7 @@
             </div>
             <div class="d-flex justify-content-around align-items-center px-3 py-2" style="background-color:white;">
                 <div class="form-group">
-                   <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                   <input type="date" class="form-control" placeholder="name@example.com">
                 </div>
             </div>
             <div class="d-flex px-3 py-2" style="background-color:white;">
@@ -31,7 +31,7 @@
             </div>
             <div class="d-flex justify-content-around align-items-center px-3 py-2" style="background-color:white;">
                 <div class="form-group">
-                   <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                   <input type="date" class="form-control" placeholder="name@example.com">
                 </div>
             </div>
             <div class="d-flex px-3 py-2" style="background-color:white;">
@@ -40,11 +40,11 @@
             <div class="d-flex justify-content-around align-items-center px-3 py-2" style="background-color:white;">
                 <div class="form-check">
                    <input type="checkbox" class="form-check-input" id="check1">
-                   <label class="form-check-label" for="check1">30 {{__('min')}}</label>
+                   <label class="form-check-label mr-3" for="check1">30 {{__('min')}}</label>
                 </div>
                 <div class="form-check">
                    <input type="checkbox" class="form-check-input" id="check2">
-                   <label class="form-check-label" for="check2">60 {{__('min')}}</label>
+                   <label class="form-check-label mr-3" for="check2">60 {{__('min')}}</label>
                 </div>
             </div>
             <div class="d-flex px-3 py-2" style="background-color:white;">
@@ -53,11 +53,11 @@
             <div class="d-flex justify-content-around align-items-center px-3 py-2" style="background-color:white;">
                 <div class="form-check">
                    <input type="checkbox" class="form-check-input" id="check1">
-                   <label class="form-check-label" for="check1">{{__('male')}}</label>
+                   <label class="form-check-label mr-3" for="check1">{{__('male')}}</label>
                 </div>
                 <div class="form-check">
                    <input type="checkbox" class="form-check-input" id="check2">
-                   <label class="form-check-label" for="check2">{{__('female')}}</label>
+                   <label class="form-check-label mr-3" for="check2">{{__('female')}}</label>
                 </div>
             </div>
             <div class="d-flex px-3 py-2" style="background-color:white;">
