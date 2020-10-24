@@ -4,6 +4,7 @@
     "filter": "Filters",
     "today": "Today",
     "this_week": "This Week",
+    "availability": "Availability & Duration",
     "availability_from": "Available From",
     "availability_to": "Available To",
     "duration": "Duration",
@@ -59,5 +60,11 @@
     "choose_date": "Choose Date",
     "male": "Male",
     "female": "Female",
-    "blogs": "Blog"
+    "blogs": "Blog",
+    "clear": "clear filters",
+    "less_150": "Less than 150",
+    "from_150_to_200": "From 150 to 200",
+    "from_200_to_300": "From 200 to 300",
+    "from_300_to_500": "From 300 to 500",
+    "above_500": "Above 500"
 }

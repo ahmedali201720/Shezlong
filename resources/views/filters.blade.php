@@ -11,7 +11,7 @@
            </select>
         </div>
         <div class="input-group col-3">
-           <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+           <select class="custom-select" id="inlineFormCustomSelect">
               <option selected value="all">{{__('all_spec')}}</option>
               <option value="Child disorders">{{__('child_disorder')}}</option>
               <option value="Adolescence disorders">{{__('adolescence')}}</option>

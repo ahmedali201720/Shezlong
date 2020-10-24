@@ -10,8 +10,97 @@ $('.img_msg').click(function () {
     }
 });
 
+var rate = 3;
+
 // animate on scroll
 
 window.addEventListener('scroll', function (e) {
     $(".navbar").fadeIn().css({ top: -50 }).animate({ top: 0 }, 2000);
 });
+
+$(".star").on('click', function () {
+    var id = +($(this).attr('id'));
+    if ($(this).attr('class') == "fa fa-star checked star") {
+        $(this).attr('class', 'fa fa-star unchecked star');
+        handleUncheckingStarGroup(id);
+    }
+    else if ($(this).attr('class') == "fa fa-star unchecked star") {
+        $(this).attr('class', 'fa fa-star checked star');
+        handleCheckingStarGroup(id);
+    }
+});
+
+function handleCheckingStarGroup(id) {
+    if (id === 1) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        rate = 1;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 2) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        $('#2').attr('class', 'fa fa-star checked star');
+        rate = 2;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 3) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        $('#2').attr('class', 'fa fa-star checked star');
+        $('#3').attr('class', 'fa fa-star checked star');
+        rate = 3;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 4) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        $('#2').attr('class', 'fa fa-star checked star');
+        $('#3').attr('class', 'fa fa-star checked star');
+        $('#4').attr('class', 'fa fa-star checked star');
+        rate = 4;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 5) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        $('#2').attr('class', 'fa fa-star checked star');
+        $('#3').attr('class', 'fa fa-star checked star');
+        $('#4').attr('class', 'fa fa-star checked star');
+        $('#5').attr('class', 'fa fa-star checked star');
+        rate = 5;
+        $('#result').html(rate.toString() + "/5");
+    }
+}
+function handleUncheckingStarGroup(id) {
+    if (id === 1) {
+        $('#1').attr('class', 'fa fa-star checked star');
+        $('#2').attr('class', 'fa fa-star unchecked star');
+        $('#3').attr('class', 'fa fa-star unchecked star');
+        $('#4').attr('class', 'fa fa-star unchecked star');
+        $('#5').attr('class', 'fa fa-star unchecked star');
+        rate = 1;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 2) {
+        $('#2').attr('class', 'fa fa-star unchecked star');
+        $('#3').attr('class', 'fa fa-star unchecked star');
+        $('#4').attr('class', 'fa fa-star unchecked star');
+        $('#5').attr('class', 'fa fa-star unchecked star');
+        rate = 2;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 3) {
+        $('#3').attr('class', 'fa fa-star unchecked star');
+        $('#4').attr('class', 'fa fa-star unchecked star');
+        $('#5').attr('class', 'fa fa-star unchecked star');
+        rate = 3;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 4) {
+        $('#4').attr('class', 'fa fa-star unchecked star');
+        $('#5').attr('class', 'fa fa-star unchecked star');
+        rate = 4;
+        $('#result').html(rate.toString() + "/5");
+    }
+    else if (id === 5) {
+        $('#5').attr('class', 'fa fa-star unchecked star');
+        rate = 5;
+        $('#result').html(rate.toString() + "/5");
+    }
+}

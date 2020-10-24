@@ -78,6 +78,42 @@ select {
     font-size: 14px !important;
 }
 
+.sidebar-head {
+    background-color: var(--mainBlue);
+}
+
+.sidebar-clear-btn {
+    background-color: #3DA8C0;
+    border: none;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar-clear-btn:hover {
+    color: #000000;
+}
+
+.checked, .checked:hover, .unchecked:hover {
+    color: orange;
+}
+
+.unchecked {
+    color: #000000;
+}
+
+.badge {
+    background-color: gainsboro;
+    color: black;
+    font-size: 12px;
+}
+
+.badge:hover {
+    background-color: silver;
+    cursor: pointer;
+}
+
 .message {
     position: fixed;
     right: 100px;
